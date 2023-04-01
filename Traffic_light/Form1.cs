@@ -16,5 +16,10 @@ namespace Traffic_light
         {
             InitializeComponent();
         }
+
+        private void Light()
+        {
+
+        }
     }
 }

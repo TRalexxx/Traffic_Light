@@ -1,4 +1,6 @@
-﻿namespace Traffic_light
+﻿using System.Windows.Forms;
+
+namespace Traffic_light
 {
     partial class Form1
     {
@@ -32,8 +34,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Form1";
-        }
 
+            light = new Button();
+            light.Location = new System.Drawing.Point(200, 200);
+            light.Size = new System.Drawing.Size(200, 200);
+            light.Click += Light();
+
+            this.Controls.Add(light);
+        }
+        Button light;
         #endregion
     }
 }
